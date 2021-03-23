@@ -24,13 +24,17 @@ h1, h2, h3, h4, h5, h6 {
 .p_style{
   font-size: 19px;
     margin-bottom: 55px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .h2_style{
   font-size: 20px;
     font-weight: 700;
 }
-
+.dot1{
+  font-size: 38px;
+    color: #d40f25;
+    font-weight: 900;
+    }
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -113,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 0px 0;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -165,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 20px;
   letter-spacing: 0.5px;
-  font-weight: normal;
+  font-weight: 600;
   font-family: Montserrat;
 }
 
@@ -2016,7 +2020,7 @@ i {
   color:#fff;
 }
 .pg-txt{
-  font-size: 29px;
+  font-size: 38px;
     font-weight: 700;
    padding: 60px;
     position: relative;
@@ -2024,7 +2028,7 @@ i {
 }
 .pro{
   margin:10px;
-  padding: 10px;
+  padding: 40px;
 
 }
 /* contact -form */
@@ -2304,7 +2308,7 @@ label.control-label {
 .form-group label {
     font-size: 16px;
     line-height: 1.42857143;
-    color: #BDBDBD;
+    color: #ffffff;
     font-weight: 400
 }
 
@@ -2332,7 +2336,7 @@ label.control-label {
 .form-group.label-static label.control-label {
     top: -30px;
     left: 0;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.07142857
 }
 
@@ -2584,4 +2588,47 @@ select.form-control[multiple] {
     font-weight: 500;
     height: auto
 }
+.ps{
+  background:#252525;
+  border-radius: 25px;
+ height: 400px;
+ padding: 40px;
+ 
+}
 
+
+.col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 2 0 72%;
+    max-width: 50% !important;
+}
+.formbtn {
+    margin-left: 25px;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 25px 10px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 16px;
+    display: inline-block;
+    /* border: 2px solid #47b2e4; */
+    background-color: #d00409;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    margin: 25px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
