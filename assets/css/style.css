@@ -27,8 +27,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 .h2_style{
-  font-size: 20px;
-    font-weight: 700;
+  font-size: 25px;
+    font-weight: 900;
+    margin-top: -50px;
 }
 .dot1{
   font-size: 38px;
@@ -410,7 +411,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 56px;
   color: #fff;
   font-family: 'Montserrat';
-  text-align: center;
+  
 }
 
 #hero h2 {
@@ -432,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 28px 11px 28px;
   border-radius: 50px;
   transition: 0.5s;
-  margin: 10px 0 0 170px;
+  margin: 20px 0 0 0px;
   color: #fff;
   background: #d00409;
 }
@@ -573,7 +574,7 @@ section {
   display: block;
   width: 120px;
   height: 1px;
-  background: #000000;
+ /*background: #000000;*/
   bottom: 1px;
   left: calc(50% - 60px);
 }
@@ -1935,7 +1936,7 @@ transform: translateY(-10px);
 .carousel-caption {
     position: initial;
     z-index: 10;
-    padding: 30px;
+    padding: 40px;
     color: #fff;
    text-align: left;
     font-size: 1.2rem;
@@ -2021,7 +2022,7 @@ i {
 }
 .pg-txt{
   font-size: 38px;
-    font-weight: 700;
+    font-weight: 900;
    padding: 60px;
     position: relative;
     text-align: center;
@@ -2029,6 +2030,7 @@ i {
 .pro{
   margin:10px;
   padding: 40px;
+  padding-bottom: 80px;
 
 }
 /* contact -form */
