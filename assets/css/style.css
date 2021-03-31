@@ -27,13 +27,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 .h2_style{
-<<<<<<< Updated upstream
-  font-size: 25px;
-    font-weight: 900;
-=======
   font-size: 28px;
     font-weight: 600;
->>>>>>> Stashed changes
     margin-top: -50px;
 }
 .dot1{
@@ -2039,13 +2034,8 @@ i {
   color:#fff;
 }
 .pg-txt{
-<<<<<<< Updated upstream
-  font-size: 38px;
-    font-weight: 900;
-=======
   font-size: 36px;
     font-weight: 600;
->>>>>>> Stashed changes
    padding: 60px;
     position: relative;
     text-align: center;
