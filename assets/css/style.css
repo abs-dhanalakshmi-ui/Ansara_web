@@ -9,7 +9,7 @@ a {
 }
 
 a:hover {
-  color: #000000;
+  color: #6d6767;
   text-decoration: none;
 }
 
@@ -27,14 +27,19 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 .h2_style{
+<<<<<<< Updated upstream
   font-size: 25px;
     font-weight: 900;
+=======
+  font-size: 28px;
+    font-weight: 600;
+>>>>>>> Stashed changes
     margin-top: -50px;
 }
 .dot1{
   font-size: 38px;
     color: #d40f25;
-    font-weight: 900;
+    font-weight: 600;
     }
 /*--------------------------------------------------------------
 # Preloader
@@ -121,9 +126,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 0;
 }
 
+
 #header.header-scrolled, #header.header-inner-pages {
      background: rgb(0 0 0);
 }
+
+
 
 #header .logo {
   font-size: 30px;
@@ -135,11 +143,18 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+
 #header .logo a {
+  color: #fff;
+}
+#header1 .logo a {
   color: #fff;
 }
 
 #header .logo img {
+  max-height: 80px;
+}
+#header1 .logo img {
   max-height: 80px;
 }
 
@@ -170,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 20px;
   letter-spacing: 0.5px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: Montserrat;
 }
 
@@ -256,6 +271,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* end Other Pages menu */
+
 /* Get Startet Button */
 .get-started-btn {
   margin-left: 25px;
@@ -268,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
  /* border: 2px solid #47b2e4;*/
  background-color: #d00409;
-  font-weight: 600;
+  font-weight: 500;
   font-family: 'Montserrat';
 }
 
@@ -327,16 +344,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav a {
-  display: block;
-  position: relative;
-  color: #37517e;
-  padding: 10px 20px;
-  font-weight: 500;
-  outline: none;
+ display: block;
+    position: relative;
+    color: #000000;
+    padding: 10px 20px;
+    font-weight: bolder;
+    outline: none;
+    font-size: 18px;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #47b2e4;
+  color: #d0040c;
   text-decoration: none;
 }
 
@@ -420,13 +438,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
 }
 .dot{
-  font-size: 75px;
+  font-size: 50px;
     color: #d40f25;
 }
 
 #hero .btn-get-started {
   font-family: Montserrat;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -439,7 +457,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #209dd8;
+  background: #1a1c1d;
 }
 
 #hero .btn-watch-video {
@@ -559,7 +577,7 @@ section {
 }
 
 .section-title h2 {
-  font-size: 29px;
+ font-size: 30px;
     font-weight: 700;
     /*text-transform: uppercase;*/
     margin-bottom: 20px;
@@ -593,13 +611,13 @@ section {
 .section-title p {
   margin-bottom: 0;
   color: #000;
-    font-weight: 800;
+    font-weight: 500;
 }
 .text-center{
   text-align: center;
 }
 .tech_p{
-  font-weight: 900;
+  font-weight: 600;
     padding: 15px;
     color:#000000;
 }
@@ -907,9 +925,9 @@ section {
   transition: 0.3s;
 }
 .services .icon-box-down h4{
-font-weight: 900;
+font-weight: 500;
     margin-bottom: 15px;
-    font-size: 17px;
+    font-size: 19px;
 }
 .services .icon-box-down  h4 a{
    color: #000000;
@@ -920,7 +938,7 @@ font-weight: 900;
   font-size: 14px;
  margin-bottom: 40px;
   color:#000000;
-  font-weight: 700;
+ /* font-weight: 700;*/
     text-align: -webkit-center;
 }
 .services .icon-box-down:hover {
@@ -935,7 +953,7 @@ transform: translateY(-10px);
     border-radius: 30px;
     /* width: 66px; */
     color: #b8060d;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .services .icon-box .icon i {
@@ -945,9 +963,9 @@ transform: translateY(-10px);
 }
 
 .services .icon-box h4 {
-  font-weight: 900;
+  font-weight: 500;
     margin-bottom: 15px;
-    font-size: 17px;
+    font-size: 19px;
 }
 
 .services .icon-box h4 a {
@@ -960,7 +978,7 @@ transform: translateY(-10px);
   font-size: 14px;
   margin-bottom: 40px;
   color:#000000;
-  font-weight: 700;
+  /*font-weight: 700;*/
     text-align: -webkit-center;
 
 }
@@ -1939,7 +1957,7 @@ transform: translateY(-10px);
     padding: 40px;
     color: #fff;
    text-align: left;
-    font-size: 1.2rem;
+    font-size: 18px;
   
 }
 
@@ -1948,7 +1966,7 @@ transform: translateY(-10px);
         position: initial;
         z-index: 10;
         padding: 3rem 2rem;
-        color: rgba(78, 77, 77, 0.856);
+        color: rgb(253 253 253 / 86%);
         text-align: center;
         font-size: 0.7rem;
         font-style: italic;
@@ -2021,8 +2039,13 @@ i {
   color:#fff;
 }
 .pg-txt{
+<<<<<<< Updated upstream
   font-size: 38px;
     font-weight: 900;
+=======
+  font-size: 36px;
+    font-weight: 600;
+>>>>>>> Stashed changes
    padding: 60px;
     position: relative;
     text-align: center;
@@ -2593,7 +2616,7 @@ select.form-control[multiple] {
 .ps{
   background:#252525;
   border-radius: 25px;
- height: 400px;
+ height: auto;
  padding: 40px;
  
 }
@@ -2602,7 +2625,7 @@ select.form-control[multiple] {
 .col-md-3 {
     -ms-flex: 0 0 25%;
     flex: 2 0 72%;
-    max-width: 50% !important;
+    /*max-width: 50% !important;*/
 }
 .formbtn {
     margin-left: 25px;
@@ -2625,7 +2648,7 @@ select.form-control[multiple] {
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 1.5;
     color: #ffffff;
     background-color: #fff;
