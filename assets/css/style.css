@@ -2033,13 +2033,22 @@ i {
   background-color: #000;
   color:#fff;
 }
+<<<<<<< Updated upstream
 .pg-txt{
   font-size: 36px;
     font-weight: 600;
    padding: 60px;
+=======
+
+.pg-txt {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 60px;
+>>>>>>> Stashed changes
     position: relative;
     text-align: center;
 }
+
 .pro{
   margin:10px;
   padding: 40px;
