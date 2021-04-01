@@ -207,6 +207,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
   top: 100%;
   visibility: visible;
+  display: flex;
 }
 
 .nav-menu .drop-down li {
@@ -216,14 +217,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down ul a {
   padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: none;
-  color: #0c3c53;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: none;
+    color: #060707;
+    font-family: Montserrat;
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #47b2e4;
+  color: #d0040c;
 }
 
 .nav-menu .drop-down > a:after {
@@ -1963,9 +1965,9 @@ transform: translateY(-10px);
         padding: 3rem 2rem;
         color: rgb(253 253 253 / 86%);
         text-align: center;
-        font-size: 0.7rem;
-        font-style: italic;
-        font-weight: bold;
+        font-size: 14px;
+        /*font-style: italic;*/
+        font-weight: 400;
         line-height: 1.5rem
     }
 }
@@ -2330,7 +2332,7 @@ label.control-label {
 .form-group label.control-label {
     font-size: 12px;
     line-height: 1.07142857;
-    font-weight: 400;
+    font-weight: 500;
     margin: 16px 0 0 0
 }
 
@@ -2621,14 +2623,14 @@ select.form-control[multiple] {
     margin-left: 25px;
     color: #fff;
     border-radius: 50px;
-    padding: 10px 25px 10px 25px;
+    padding: 10px 35px 10px 35px;
     white-space: nowrap;
     transition: 0.3s;
-    font-size: 16px;
+    font-size: 18px;
     display: inline-block;
     /* border: 2px solid #47b2e4; */
     background-color: #d00409;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'Montserrat';
     margin: 25px;
 }
@@ -2638,12 +2640,139 @@ select.form-control[multiple] {
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
-    font-weight: 900;
+    font-weight: 500;
     line-height: 1.5;
-    color: #ffffff;
+    color: #ffffff !important;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+/*======Brand logo Slider=======*/
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+    opacity: 0.4;
+    filter: grayscale(1);
+}
+.slick-slide img:hover{
+  opacity: 1;
+  transform: scale(1.15);
+  filter: grayscale(0);
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* End Slider */
