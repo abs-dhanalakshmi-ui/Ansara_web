@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu .drop-down ul {
   border-radius: 0px;
-  display: block;
+ display: inline-flex;
   position: absolute;
   left: 14px;
   top: calc(100% + 30px);
@@ -337,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
-  background: #fff;
+  background: #060606;
   transition: ease-in-out 0.2s;
   opacity: 0;
   visibility: hidden;
@@ -354,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
  display: block;
     position: relative;
-    color: #000000;
+    color: #fbfbfb;
     padding: 10px 20px;
     font-weight: bolder;
     outline: none;
@@ -2031,7 +2031,7 @@ i {
 
 @media(max-width:767px) {
     i {
-        padding: 0.8rem
+        padding: 0px;
     }
 }
 
@@ -2806,3 +2806,37 @@ select.form-control[multiple] {
     left: 35px;
     top: 10px;
 }
+
+@media (max-width: 767px){
+  .slick-slide{
+    margin: 0px;
+    padding: 3px;
+    width:60px !important;
+  }
+  .pro_img{
+    height: 400px;
+    padding: 30px;
+  }
+  .services .icon-box-down{
+    margin-top: 30px !important;
+    box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+    padding: 40px 20px 40px 20px;
+    transition: all ease-in-out 0.4s;
+    background: #fff;
+    height: 377px;
+    border-radius: 20px;
+  }
+  .pro{
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 80px;
+  }
+  .ps{
+    background: #252525;
+    border-radius: 25px;
+    height: auto;
+    padding: 20px;
+  }
+
+}
+

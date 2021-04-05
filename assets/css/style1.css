@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
  #abt_top{
     padding: 120px 0 !important;
     overflow: hidden;
@@ -144,7 +144,7 @@
 
 .nav-menu .drop-down ul {
   border-radius: 0px;
-  display: block;
+  display: inline-flex;
   position: absolute;
   left: 14px;
   top: calc(100% + 30px);
@@ -161,6 +161,7 @@
   opacity: 1;
   top: 100%;
   visibility: visible;
+  display: flex;
 }
 
 .nav-menu .drop-down li {
@@ -536,6 +537,31 @@ width: 85% !important;
 }
 .down_angle{
   position: absolute;
-    left: 35px;
+    left: 50px;
     top: 10px;
+}
+@media (max-width:767px){
+
+.phone_line {
+    width: 74% !important;
+    position: relative;
+    left: 75px;
+    top: -45px;
+}
+.contact_bg {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 2%;
+}
+.phone {
+    width: 20% !important;
+    color: #000;
+    font-weight: 400;
+    padding-left: 0px;
+}
+.down_angle {
+    position: absolute;
+    left: 45px;
+    top: 10px;
+}
 }
