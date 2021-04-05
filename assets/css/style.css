@@ -5,7 +5,7 @@ body {
 }
 
 a {
-  color: #47b2e4;
+  color: #d0040c;
 }
 
 a:hover {
@@ -14,7 +14,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Montserrat;
+  font-family: Montserrat !important;
 }
 .container-fluid{
   margin:0;
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down ul {
-  border-radius: 8px;
+  border-radius: 0px;
   display: block;
   position: absolute;
   left: 14px;
@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0;
   visibility: hidden;
   padding: 10px 0;
-  background: #fff;
+  background: #424242;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -211,17 +211,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu .drop-down li {
-  min-width: 180px;
-  position: relative;
+  min-width: 140px;
+  /*position: relative;*/
+  display: block !important;
+}
+.border_line{
+  border-right: 1px solid #fff;
+}
+.drop_img{
+  margin-left: 50px;
+    margin-bottom: 10px;
+    width: 35px;
 }
 
 .nav-menu .drop-down ul a {
-  padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 600;
+ /* padding: 10px 20px;*/ 
+    font-size: 15px;
+    font-weight: 400;
     text-transform: none;
-    color: #060707;
+    color: #fff !important;
     font-family: Montserrat;
+    text-align: center;
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
@@ -1755,7 +1765,7 @@ transform: translateY(-10px);
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: #000000;
 }
 
 #footer .footer-newsletter {
@@ -1821,13 +1831,14 @@ transform: translateY(-10px);
 }
 
 #footer .footer-top .footer-contact h3 {
-  font-size: 28px;
+  font-size: 26px;
   margin: 0 0 10px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  color: #37517e;
+  color: #d0040c;
+  font-family: Montserrat !important;
 }
 
 #footer .footer-top .footer-contact p {
@@ -1839,11 +1850,12 @@ transform: translateY(-10px);
 }
 
 #footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #37517e;
-  position: relative;
-  padding-bottom: 12px;
+  font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    position: relative;
+    padding-bottom: 12px;
+    font-family: Montserrat !important;
 }
 
 #footer .footer-top .footer-links {
@@ -1858,7 +1870,7 @@ transform: translateY(-10px);
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #47b2e4;
+  color: #d0040c;
   font-size: 18px;
   line-height: 1;
 }
@@ -1878,17 +1890,28 @@ transform: translateY(-10px);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+  font-size: 16px;
+    font-weight: 400;
 }
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #47b2e4;
+  color: #d0040c;
 }
-
+.ph{
+  width:54px !important;
+  padding-left: 0px !important;
+}
+.ph-line{
+  width: 200px !important;
+    position: relative;
+    left: 60px;
+    top: -45px;
+}
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #47b2e4;
+  background: #d0040c !important;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
