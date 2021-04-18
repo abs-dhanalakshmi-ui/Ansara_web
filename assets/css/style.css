@@ -7,6 +7,68 @@ body {
 a {
   color: #d0040c;
 }
+.content_style{
+  padding: 50px;
+}
+.content_style1{
+  padding: 50px;
+}
+#sap_section{
+  padding: 40px 0;
+}
+
+.content_style h2{
+  font-size: 28px;
+  font-weight: 700;
+  text-align: right;
+  font-family: Montserrat !important;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+}
+.content_style p{
+ text-align: right;
+ font-size: 16px;
+ font-weight: 400;
+   
+}
+.content_style1 h2{
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+  font-family: Montserrat !important;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.content_style1 p{
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+}
+.grey_box{
+  background-color: #ddd;
+  width: 120px;
+  height: 120px;
+ }
+
+.sap_box{
+  box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+    padding: 40px 20px 40px 20px;
+    transition: all ease-in-out 0.4s;
+    background: #fff;
+    height: auto;
+    border-radius: 20px;
+    width: 300px;
+}
+.sap_box h2{
+  font-size: 16px;
+    font-weight: 600;
+    padding-top: 40px;
+}
+.sap_box p{
+  font-size: 14px;
+  font-weight: 400;
+}
 
 a:hover {
   color: #6d6767;
@@ -441,9 +503,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 50px;
-  font-size: 24px;
+  color: #fff;
+  font-size: 38px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+#hero p{
+  color:#fff;
+  font-size: 14px;
+  margin-top: 10px;
 }
 .dot{
   font-size: 50px;
@@ -493,6 +561,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+.red{
+  background-color: #d10409;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 991px) {
@@ -2678,7 +2752,8 @@ select.form-control[multiple] {
 /* Slider */
 
 .slick-slide {
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
+    padding:10px 10px 10px 40px;
 }
 
 .slick-slide img {
