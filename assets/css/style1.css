@@ -46,8 +46,8 @@
 .abt_section h1{
   color: #d0040c;
     text-align: center;
-    font-weight: 700;
-    font-size: 28px;
+    font-weight: 600;
+    font-size: 25px !important;
   }
 .abt {
  font-size: 14px;
@@ -323,8 +323,9 @@
    color: #000000;
 }
 .core_section h2{
-   font-size: 30px;
-    font-weight: 500;
+   font-size: 23px;
+    font-weight: 600;
+    margin-top:15px;
 }
 .core_section p{
   font-size: 16px;
@@ -384,6 +385,10 @@ width: 85% !important;
  border-right: 1px solid #fff;
   height: 65px;
 }
+.border_line1{
+  border-right: 2px solid #b5b4b4;
+   height: 70px;
+ }
 .round{
   height: 130px;
   width: 130px;
