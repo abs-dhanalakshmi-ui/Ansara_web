@@ -672,7 +672,7 @@ section {
 
 .section-title {
   text-align: center;
-  /* padding-bottom: 30px;  */
+   padding-bottom: 15px;  
 }
 .section-title p{
   margin-bottom: 20px !important;
@@ -714,6 +714,7 @@ section {
   margin-bottom: 0;
   color: #000;
     font-weight: 500;
+    margin-top:15px;
 }
 .text-center{
   text-align: center;
@@ -2004,18 +2005,18 @@ transform: translateY(-10px);
     top: -45px;
 }
 #footer .footer-top .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #d0040c !important;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+  font-size: 21px;
+    display: inline-block;
+    background: #d0040c !important;
+    color: #fff;
+    line-height: 1;
+    padding: 7px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
 }
 
 #footer .footer-top .social-links a:hover {
