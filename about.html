@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Welcome Ansara</title>
+  <title>Ansara - SaaS Business Solutions | Business Consulting | Web App Development</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
   <!-- Google Fonts -->
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -28,7 +29,85 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/style1.css" rel="stylesheet">
- 
+ <style>
+   .fa, .fas {
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+}
+   .testimonials{
+	background-color: #000;
+	position: relative;
+	/* padding-top: 80px; */
+	&:after{
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 30%;
+		background-color: #ddd;
+	}
+}
+#customers-testimonials {
+	.item-details{
+		background-color: #333333;
+		color: #fff;
+		padding: 20px 10px;
+		text-align: left;
+		h5{
+			margin: 0 0 15px;
+			font-size: 18px;
+			line-height: 18px;
+			span{
+				color: red;
+				float:right;
+				padding-right: 20px;
+			}
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+	.item {
+			text-align: center;
+			// padding: 20px;
+			margin-bottom:80px;
+	}
+}
+.owl-carousel .owl-nav [class*='owl-'] {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.owl-carousel .owl-nav [class*='owl-'].disabled:hover {
+  background-color: #D6D6D6;
+}
+.owl-carousel {
+  position: relative;
+}
+.owl-carousel .owl-next,
+.owl-carousel .owl-prev {
+  width: 50px;
+  height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+  position: absolute;
+  top: 30%;
+	font-size: 20px;
+  color: #fff;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+.owl-carousel .owl-prev {
+  left: -70px;
+}
+.owl-carousel .owl-next {
+  right: -70px;
+}
+
+
+ </style>
  
 </head>
 
@@ -144,22 +223,22 @@
 
         <div class="row team">
         
-          <div class="col-md-3 text-center border_line1">
+          <div class="col-md-4 text-center border_line1">
             <h2>40+</h2>
             <p>Team Members</p>
           </div>
-          <div class="col-md-3 text-center border_line1">
+          <div class="col-md-4 text-center border_line1">
              <h2>2015</h2>
             <p>Year Founded</p>
           </div>
-          <div class="col-md-3 text-center border_line1">
+          <div class="col-md-4 text-center">
              <h2>10+</h2>
-            <p>Project Delivered</p>
+            <p>Projects Delivered</p>
           </div>
-          <div class="col-md-3 text-center">
+          <!-- <div class="col-md-3 text-center">
              <h2>1,500</h2>
             <p>Lives Touched</p>
-          </div>
+          </div> -->
        
         </div>
 
@@ -169,44 +248,72 @@
     <!-- End Client Section -->
 
   <!-- our Key Team --->
-
-<div class="container-fluid pg">
+  <section class="testimonials">
+    <div class="container">
       <div class="section-title">
-          <h2 class="key">Meet Our Key Team</h2>
-      </div>
-
-   <div class="row mx-0">
- 
-
-   <div class="col-md-4 text-center">
-            <center><div class="round"></div></center>
+        <h2 class="key">Meet Our Key Team</h2>
+    </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="customers-testimonials" class="owl-carousel">
+  
+              <!--TESTIMONIAL 1 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <center><div class="round"></div></center>
+                  <div class="item-details">
+                    <!-- <h5>Chicken for two Roasted <span>$21</span></h5>
+                    <p>There was a time when Chinese food in this country meant (Americanized) Cantonese food.</p> -->
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 1 -->
+              <!--TESTIMONIAL 2 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <!-- <img class="img-responsive" src="https://image.freepik.com/free-photo/dishes-with-healthy-waffles_1220-367.jpg" alt=""> -->
+                  <center><div class="round"></div></center>
+                  <div class="item-details">
+                  
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 2 -->
+              <!--TESTIMONIAL 3 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <center><div class="round"></div></center>
+                  <div class="item-details">
+                  
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 3 -->
+              <!--TESTIMONIAL 4 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <center><div class="round"></div></center>
+                  <div class="item-details">
+                    
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 4 -->
+              <!--TESTIMONIAL 5 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <center><div class="round"></div></center>
+                  <div class="item-details">
+                  
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 5 -->
+            </div>
           </div>
-          <div class="col-md-4 text-center">
-            <center><div class="round"></div></center>
-          </div>
-          <div class="col-md-4 text-center">
-             <center><div class="round"></div></center>
-          </div>
-          
-   </div>
-
-   <div class="row mx-0">
- 
-
-   <div class="col-md-4 text-center">
-            <center><div class="round"></div></center>
-          </div>
-          <div class="col-md-4 text-center">
-            <center><div class="round"></div></center>
-          </div>
-          <div class="col-md-4 text-center">
-             <center><div class="round"></div></center>
-          </div>
-          
-   </div>
-
-
-</div>
+        </div>
+        </div>
+      </section>
 
  <!-- our Key Team end --->
 
@@ -272,9 +379,13 @@
       </div>
     </section>
 
-    <!--Team-Starting-->
+   
+    <!-- TESTIMONIALS -->
+
+
+
+    <!-- END OF TESTIMONIALS -->
     
-    <!--Team-end-->
    
 
   </main><!-- End #main -->
@@ -337,10 +448,10 @@
             <h4>Our Social Networks</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
           </div>
@@ -382,7 +493,34 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+<script>
+  jQuery(document).ready(function($) {
+"use strict";
+$('#customers-testimonials').owlCarousel( {
+		loop: true,
+		center: true,
+		items: 3,
+		margin: 30,
+		autoplay: true,
+		dots:true,
+    nav:true,
+		autoplayTimeout: 8500,
+		smartSpeed: 450,
+  	navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 2
+			},
+			1170: {
+				items: 3
+			}
+		}
+	});
+});
+</script>
 </body>
 
 </html>
