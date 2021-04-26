@@ -1936,7 +1936,9 @@ transform: translateY(-10px);
   color: #d0040c;
   font-family: Montserrat !important;
 }
-
+.fp{
+  color:#777;
+}
 
 #footer .footer-top .footer-contact p {
   font-size: 16px;
