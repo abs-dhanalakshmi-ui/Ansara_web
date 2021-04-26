@@ -672,7 +672,7 @@ section {
 
 .section-title {
   text-align: center;
-   padding-bottom: 15px;  
+   padding-bottom: 25px;  
 }
 .section-title p{
   margin-bottom: 20px !important;
@@ -1860,7 +1860,7 @@ transform: translateY(-10px);
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  font-size: 14px;
+  font-size: 16px;
   background: #000000;
 }
 
@@ -1938,11 +1938,12 @@ transform: translateY(-10px);
 }
 
 #footer .footer-top .footer-contact p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: Montserrat !important;
-  color: #5e5e5e;
+  font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: Montserrat !important;
+    color: #000;
 }
 
 #footer .footer-top h4 {
@@ -2004,18 +2005,22 @@ transform: translateY(-10px);
     left: 60px;
     top: -45px;
 }
+.mt-3, .my-3 {
+  margin-top: 1rem!important;
+  margin-right: 50px;
+}
 #footer .footer-top .social-links a {
-  font-size: 21px;
+  font-size: 40px;
     display: inline-block;
     background: #d0040c !important;
     color: #fff;
     line-height: 1;
-    padding: 7px 0;
+    padding: 9px 0;
     margin-right: 4px;
     border-radius: 50%;
     text-align: center;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     transition: 0.3s;
 }
 
@@ -2771,11 +2776,11 @@ select.form-control[multiple] {
 }
 
 /*======Brand logo Slider=======*/
+
 /* Slider */
 
 .slick-slide {
-    
-    /* padding:10px 10px 10px 10px;  */
+    margin: 0px 30px;
 }
 
 .slick-slide img {
@@ -2788,7 +2793,6 @@ select.form-control[multiple] {
   transform: scale(1.15);
   filter: grayscale(0);
 }
-
 .slick-slider
 {
     position: relative;
@@ -2861,8 +2865,6 @@ select.form-control[multiple] {
     float: left;
     height: 100%;
     min-height: 1px;
-    padding-left: 50px;
-    width:135px !important;
 }
 [dir='rtl'] .slick-slide
 {
@@ -2897,7 +2899,6 @@ select.form-control[multiple] {
 .slick-arrow.slick-hidden {
     display: none;
 }
-
 /* End Slider */
 
 .down_angle{

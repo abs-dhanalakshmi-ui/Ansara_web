@@ -567,11 +567,12 @@ width: 85% !important;
     font-family: Montserrat !important;
 }
 #footer .footer-top .footer-contact p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
+    font-weight: 400;
     margin-bottom: 0;
     font-family: "Jost", sans-serif;
-    color: #ffffff !important;
+    color: #fff !important;
 }
 
 #footer .footer-top .footer-links ul a {
