@@ -272,79 +272,77 @@
   position: absolute;
   right: 15px;
 }
-@media (max-width: 1500px){
-  .contact_top{
-    padding-top: 50px;
-    overflow: hidden;
+.contact_top{
+  padding-top: 50px;
+  overflow: hidden;
 }
 .contact_top h2 {
-  font-size: 40px;
-  font-weight: 700;
-  color: #000000;
-  text-align: center;
+font-size: 40px;
+font-weight: 700;
+color: #000000;
+text-align: center;
 }
 .contact_bg {
-  background-color: #ddd;
-  padding: 75px;
-  border-radius: 2%;
+background-color: #ddd;
+padding: 75px;
+border-radius: 2%;
 }
 .phone {
-  width: 15% !important;
-  color: #000;
-  font-weight: 400;
-  padding-left: 0px;
+width: 15% !important;
+color: #000;
+font-weight: 400;
+padding-left: 0px;
 }
 .phone_line {
-  width: 85% !important;
-  position: relative;
-  left: 75px;
-  top: -45px;
+width: 85% !important;
+position: relative;
+left: 75px;
+top: -45px;
 }
 .contct_p {
-  margin-bottom: 3rem;
+margin-bottom: 3rem;
 }
 #footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #000 !important;
-  color: #fff !important;
-  border-bottom: 1px solid;
+padding: 60px 0 30px 0;
+background: #000 !important;
+color: #fff !important;
+border-bottom: 1px solid;
 }
 #footer .footer-top .footer-contact h3 {
-  font-size: 26px;
-  margin: 0 0 10px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #ffffff !important;
-  font-family: Montserrat !important;
+font-size: 26px;
+margin: 0 0 10px 0;
+padding: 2px 0 2px 0;
+line-height: 1;
+text-transform: uppercase;
+font-weight: 600;
+color: #ffffff !important;
+font-family: Montserrat !important;
 }
 #footer .footer-top .footer-contact p {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  margin-bottom: 0;
-  font-family: "Jost", sans-serif;
-  color: #fff !important;
+font-size: 16px;
+line-height: 24px;
+font-weight: 400;
+margin-bottom: 0;
+font-family: "Jost", sans-serif;
+color: #fff !important;
 }
 #footer .footer-top h4 {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff !important;
-  position: relative;
-  padding-bottom: 12px;
-  font-family: Montserrat !important;
+font-size: 20px;
+font-weight: 400;
+color: #fff !important;
+position: relative;
+padding-bottom: 12px;
+font-family: Montserrat !important;
 }
 #footer .footer-top .footer-links ul a {
-  color: #ffffff !important;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-  font-size: 16px;
-  font-weight: 400;
+color: #ffffff !important;
+transition: 0.3s;
+display: inline-block;
+line-height: 1;
+font-size: 16px;
+font-weight: 400;
 }
 
-}
 
 @media (max-width: 1366px) {
   .nav-menu .drop-down .drop-down ul {
