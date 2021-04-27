@@ -33,24 +33,15 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
  <style type="text/css">
- 	
+ .ph option {
+  background: #fff!important;
+}
+.ph{
+  color: #969090 !important;
+  background: url(assets/img/down-chevron.svg) no-repeat right #252525!important;
+  border-bottom: 1px solid #fff!important;
+}
 
-/* .carousel-indicators li {
-    box-sizing: content-box;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    width: 5px;
-    height: 5px;
-    margin-right: 5px;
-    margin-left: 4px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #fff;
-    border-bottom: 10px solid transparent;
-    opacity: 0.5;
-    transition: opacity .6s ease;
-    border-radius: 50%;
-} */
  </style>
  
 </head>
@@ -254,7 +245,7 @@
        </section>
 
       </div>
-      
+      </section>
     <!-- End Client Section -->
 
     
@@ -273,10 +264,10 @@
         <div class="pro_img">
         <div id="demo" class="carousel slide" data-ride="carousel">
         	<ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+       </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="carousel-caption">
@@ -304,10 +295,13 @@
             </div>
         </div>
     </div>
-     </div>  
+    </div>
+     
     </section>
 
     <!-- End Project Section -->
+   
+    
 
      <!-- =======  Tech-Section ======= -->
     <section>
@@ -354,6 +348,7 @@
     </section>
 
     <!-- End Tech Section -->
+   
 
      <!-- =======  Got-Project-Section ======= -->
 <section id="enquiry">
@@ -378,6 +373,7 @@
                         <input class="form-control" id="name" type="text" name="name" >
                         
                       </div>
+                      
                       <div class="form-group label-floating">
                         <label class="control-label" for="name">Phone</label>
                          <select class="form-control ph" style="color: #969090 !important;">
@@ -385,7 +381,8 @@
                           <option>+966</option>
                           <option>+1</option>
                          
-                        </select><i class="fa fa-angle-down down_angle"></i>
+                        </select>
+                        <!-- <i class="fa fa-angle-down down_angle"></i> -->
                         <input class="form-control ph-line" id="Phone" type="text" name="name">
                        
                       </div>
@@ -433,19 +430,7 @@
   <!-- ======= Footer ======= -->
    <footer id="footer">
 
-   <!--  <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> -->
+   
 
     <div class="footer-top">
       <div class="container">
@@ -538,6 +523,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
 
   <script type="text/javascript">
   $(document).ready(function(){
