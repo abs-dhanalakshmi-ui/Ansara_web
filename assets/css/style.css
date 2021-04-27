@@ -2065,9 +2065,18 @@ transform: translateY(-10px);
     padding-top: 4px;
   }
 }
+@media (max-width: 1500px){
+  .pro_img {
+    height: 400px;
+    padding: 80px;
+    background-image: url(../img/project.jpg);
+    background-repeat: repeat-y;
+    width: 100% !important;
+}
+}
 
 /*slider-code*/
-#demo {
+  #demo {
     background: #b3121a;
     max-width: 600px;
     margin: auto;
@@ -2083,7 +2092,7 @@ transform: translateY(-10px);
    text-align: left;
     font-size: 18px;
   
-}
+}  
 
 @media(max-width:767px) {
     .carousel-caption {
@@ -2125,7 +2134,7 @@ transform: translateY(-10px);
         font-size: 0.6rem;
         margin-top: 0.5rem
     }
-}
+} 
 
 i {
     /*background-color: rgb(223, 56, 89);
