@@ -37,6 +37,7 @@
 }
 .form-control, .form-group .form-control {
   /* background-image: linear-gradient(#141515, #181919), linear-gradient(#000000, #040404) !important; */
+  background-image: linear-gradient(#009688, #009688), linear-gradient(#545252, #D2D2D2);
   }
 .form-control {
   color:#000 !important;
@@ -45,12 +46,67 @@
   background: #fff!important;
 }
 .phone{
+  color: #000 !important;
+  background: url(assets/img/down-chevron.svg) no-repeat right #252525!important;
+  border-bottom: 1px solid #fff!important;
+  border-bottom: 1px solid #939292 !important;
+    background-color: #ddd !important;
+    
+}
+.white-color{
+  color:#fff !important;
+}
+/*Model-popup*/
+
+.pg {
+    background: #000;
+    border-radius: 0px;
+    height: auto;
+    padding: 0px;
+}
+.modal-header {
+  border-bottom: 1px solid #000;
+}
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    /* text-shadow: 0 1px 0 #fff; */
+    /* opacity: .5; */
+}
+.ph{
   color: #969090 !important;
   background: url(assets/img/down-chevron.svg) no-repeat right #252525!important;
   border-bottom: 1px solid #fff!important;
-  border-bottom: 1px solid #d6d6d6!important;
-    background-color: #ddd !important;
 }
+.phone_line {
+    width: 75% !important;
+    position: relative;
+    left: 95px;
+    top: -45px;
+}
+.modal-dialog {
+    max-width: 1200px !important;
+    margin: 1.75rem auto;
+}
+.pg-txt {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: -60px !important;
+    position: relative;
+    text-align: center;
+    
+}
+.pro {
+    margin: 0px !important;
+    padding: 0px !important;
+    padding-bottom: 20px !important;
+}
+
+/*Model-popup*/
+
 
  </style>
  
@@ -115,7 +171,8 @@
          
       </nav><!-- .nav-menu -->
 
-      <a href="index.html#enquiry" class="get-started-btn scrollto">Quick Enquiry</a>
+      <a href="#myModal" class="get-started-btn scrollto" data-toggle="modal">Quick Enquiry</a>
+
 
     </div>
   </header><!-- End Header -->
@@ -159,12 +216,12 @@
          <div class="col-md-6">
            <div class="form-group label-floating">
                         <label class="control-label" for="name">Full Name</label>
-                        <input class="form-control" id="f_name" type="text" name="name" >
+                        <input class="form-control" id="f_name" type="text" name="f_name" >
                         
                       </div>
                       <div class="form-group label-floating">
                         <label class="control-label" for="name">Last Name</label>
-                        <input class="form-control" id="l_name" type="text" name="name">
+                        <input class="form-control" id="l_name" type="text" name="l_name">
                        
                       </div>
           </div>
@@ -172,14 +229,14 @@
 
                   <div class="form-group label-floating">
                         <label class="control-label" for="email">Email</label>
-                        <input class="form-control" id="email">
+                        <input class="form-control" id="email" name="email">
                         
                       </div>
 
                        <div class="form-group label-floating">
                         <label class="control-label" for="email">Phone</label>
                         
-                        <select class="form-control phone">
+                        <select class="form-control phone" id="country" name="country">
                          
                           <option> +91 </option>
                           <option>+966</option>
@@ -188,7 +245,7 @@
                         </select> 
 
 
-                        <input class="form-control phone_line" id="phone">
+                        <input class="form-control phone_line" id="phone" name="phone">
                        
                       </div>
          </div>
@@ -205,7 +262,7 @@
 
       
         </div><!--row end-->
-         <center> <a href="#" class="formbtn">Submit</a></center>
+        <center> <button name="submit" class="formbtn" onClick="sendContact();">Send</button><br><div class="message_info"></div></center>
 
       </div>
     <!--end contact-form-->
@@ -250,7 +307,7 @@
 
              </div>
             <div class="col-md-10">
-              <p class="contct_p">Emil:info@ansara.co<br>
+              <p class="contct_p">Email:info@ansara.co<br>
               Web:www.ansara.co</p>
             </div>
           </div>
@@ -262,6 +319,123 @@
         
       </div>
     </section>
+
+    <!--Modal-popup-->
+    <div class="container"> 
+
+      <!-- Button to trigger modal -->
+     
+       
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="pg">
+              <div class="modal-header"> 
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                 
+               </div> 
+              
+                 
+              <div class="modal-body">
+               
+                <div class="container">
+                  
+                  <h2 class="pg-txt">Got a project in mind <span class="dot1">?</span></h2>
+                 
+                  <div class="row pro">
+          
+                  <div class="col-md-6">
+                   <h2 class="h2_style">WE CAN BUILD TOGETHER <span class="dot">.</span></h2>
+                   <p class="p_style">Ansara is committed to bringing your ideas to life.<br>
+                   Brief us about your requirements and we will get in<br>
+                   touch with you!</p>
+                   <img src="assets/img/illustration.png"  class="img-fluid" style="margin-left:30px;"/>
+                   </div>
+          
+                <div class="col-md-6">
+                 <div class="ps">
+                 <div class="row">
+                 <div class="col-md-6">
+                      <div class="form-group label-floating">
+                                  <label class="control-label white-color" for="name">Full Name</label>
+                                  <input class="form-control" id="full_name2" type="text" name="full_name" >
+                                  
+                                </div>
+                                
+                                <div class="form-group label-floating">
+                                  <label class="control-label white-color" for="name">Phone</label>
+                                   <select class="form-control ph" name="country" id="country2">
+                                    <option>+91</option>
+                                    <option>+966</option>
+                                    <option>+1</option>
+                                   
+                                  </select>
+                                  <!-- <i class="fa fa-angle-down down_angle"></i> -->
+                                  <input class="form-control ph-line" id="phone2" type="text" name="phone">
+                                 
+                                </div>
+                     </div>
+                  <div class="col-md-6">
+          
+                             <div class="form-group label-floating">
+                                  <label class="control-label white-color" for="email">Email</label>
+                                  <input class="form-control" id="email2" type="text" name="email">
+                                  
+                                </div>
+          
+                                 <div class="form-group label-floating">
+                                  <label class="control-label white-color" for="email">Skype/google Talk ID</label>
+                                  <input class="form-control" id="skype2" type="text" name="skype">
+                                 
+                                </div>
+                    </div>
+                 
+                  </div><!--row end-->
+          
+                  <div class="form-group label-floating">
+                                    <label for="message" class="control-label white-color" style="margin-top: -15px;">Project Brief</label>
+                                    <textarea class="form-control" rows="3" id="message2" name="message" style="height: 40px;margin-top:-20px;"></textarea>
+                                    
+                                </div>
+          <!-- <center> <a href="#" class="formbtn">Submit</a></center> -->
+          <center> <button name="submit" class="formbtn" onClick="sendContact2();">Send</button><br><div class="message_info2"></div></center>
+          
+          </div><!--div end-->
+          
+          
+          </div>
+          
+          
+          
+          </div><!--col-6 end-->
+          
+            </div>
+          </div>
+           
+           
+           </div>
+           
+           
+           
+              </div>
+  
+  
+  
+  
+  
+              </div>
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>  -->
+             </div>
+          </div>
+        </div>
+        
+      </div> 
+     <!--end-modal-popup-->
+      
    
 
   </main><!-- End #main -->
@@ -358,6 +532,148 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+function sendContact() {
+    var valid;  
+    valid = validateContact();
+    if(valid) {
+      var f_name=$("#f_name").val();
+      var l_name=$("#l_name").val();
+      var email=$("#email").val();
+      var country=$("#country").val();
+      var phone=$("#phone").val();
+      var message=$("#message").val();
+      $.ajax({
+              type: 'POST',
+              url: 'mail.php',
+              data: {f_name:f_name,l_name:l_name,email:email,country:country,phone:phone,message:message,type:"contact"},
+              success: function(data){
+                  //alert("aaaaaaaaa");
+                  if(data=='sent'){
+                       $(".message_info").html("<span style='color:#2bb54a; font-weight:bold;'>Your Mail is Received!!!</span>");
+                       $("#f_name").val();
+                       $("#l_name").val();
+                       $("#phone").val();
+                       $("#email").val();
+                       $("#message").val();
+                  }
+                  else{
+                      $(".message_info").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");
+                  }
+              }
+      })  
+    }      
+}
+function validateContact() {
+  var valid = true; 
+
+  if(!$("#f_name").val()) {
+      $("#f_name").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+      valid = false;
+  }
+  if(!$("#l_name").val()) {
+      $("#l_name").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+      valid = false;
+  }
+  
+  if(!$("#email").val()) {
+      $("#email").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+      valid = false;
+  }
+  if(!$("#email").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+      $("#email").focus();
+      $("#email").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+      valid = false;
+  }
+  if(!$("#country").val()) {
+      $("#country").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+      valid = false;
+  }
+  
+  if(!$("#phone").val()) {
+      $("#phone").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+      valid = false;
+  }
+      
+  if(!$("#message").val()) {
+      $("#message").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+      valid = false;
+  }
+  
+  return valid;
+}
+
+
+function sendContact2() {
+    var valid;  
+    valid = validateContact2();
+    if(valid) {
+      var full_name=$("#full_name2").val();
+      var email=$("#email2").val();
+      var country=$("#country2").val();
+      var phone=$("#phone2").val();
+      var sc_id=$("#skype2").val();
+      var message=$("#message2").val();
+      $.ajax({
+              type: 'POST',
+              url: 'mail.php',
+              data: {full_name:full_name,email:email,country:country,phone:phone,sc_id:sc_id,message:message,type:"enquiry"},
+              success: function(data){
+                  //alert("aaaaaaaaa");
+                  if(data=='sent'){
+                      $(".message_info2").html("<span style='color:#2bb54a; font-weight:bold;'>Your Mail is Received!!!</span>");
+                      $("#full_name2").val();
+                      $("#phone2").val();
+                      $("#email2").val();
+                      $("#skype2").val();
+                      $("#message2").val();
+                  }
+                  else{
+                      $(".message_info2").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");
+                  }
+                  
+              }
+      })  
+    }      
+}
+
+
+function validateContact2() {
+    var valid = true; 
+
+    if(!$("#full_name2").val()) {
+        $("#full_name2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }   
+    if(!$("#email2").val()){
+        $("#email2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }
+    if(!$("#email2").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+        $("#email2").focus();
+        $("#email2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }
+    if(!$("#country2").val()) {
+        $("#country2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }
+    if(!$("#phone2").val()) {
+        $("#phone2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }
+    if(!$("#skype2").val()) {
+        $("#skype2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }
+    if(!$("#message2").val()) {
+        $("#message2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }
+    return valid;
+}  
+</script>
 
 </body>
 
