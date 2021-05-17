@@ -83,8 +83,7 @@
 <?php 
 if(!empty($_POST['send'])){
 
-    //$to = 'careers@ansara.co'; 
-	$to = 'jaya@ansara.co';
+    $to = 'careers@ansara.co'; 
     $from = $_POST['email']; 
     $fromName = $_POST['full_name']; 
     $subject = 'Jobs with Attachment by '.$_POST['full_name'];  
@@ -190,26 +189,7 @@ if(!empty($_POST['send'])){
           <li><a href="#">Blog</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           
-          <!--<li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-
-        </ul>-->
+         
       </nav><!-- .nav-menu -->
 
       <a href="index.html#enquiry" class="get-started-btn scrollto">Quick Enquiry</a>
@@ -283,12 +263,12 @@ if(!empty($_POST['send'])){
                         </div>
                         
                        <div class="mt">
-                        <label class="upload_resume">Upload Resume</label>
+                        <label class="upload_resume">Upload Resume</label><br>
                         <input type="file"  name="filename" id="filename">
                     </div>
                     <br>
                   
-                     <center><input type="submit" class="formbtn" name="send" value="Submit"></center>
+                     <center><input type="submit" class="formbtn" style=" border: 2px solid #d00409 !important;" name="send" value="Submit"></center>
              </div>
              <div class="col-md-2"></div>
         </div>

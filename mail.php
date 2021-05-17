@@ -7,8 +7,7 @@ if($_POST["type"]=='enquiry'){
     $sc_id=$_POST['sc_id'];
     $message=$_POST['message'];
 	$phoneno=$country."".$phone;
-	//$to ="info@ansara.co";
-	$to ="jaya@ansara.co";
+	$to ="info@ansara.co";
 	$subject = "Enquiry From ".$full_name;
 	$body = '
 	 <p>Full Name: '.$full_name.'</p>
@@ -39,7 +38,7 @@ else if($_POST["type"]=='contact'){
     $message=$_POST['message'];
 	$phoneno=$country."".$phone;
 	$nameDetails=$f_name."".$last_name;
-	$to ="jaya@ansara.co";
+	$to ="info@ansara.co";
 	$subject = "Enquiry From ".$nameDetails;
 	$body = '
 	 <p>Full Name: '.$nameDetails.'</p>
