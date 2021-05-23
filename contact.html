@@ -197,8 +197,8 @@
 
         	<div class="col-md-3"></div>
           <div class="col-md-6">
-              <p class="abt">Get in touch to know how Ansara can help you bring your ideas to life.Fill the
-                       Form and our representative will connect with you.</p>
+              <p class="abt">Get in touch to know how Ansara can help you bring your ideas to life.<br>
+                Fill the Form and our representative will connect with you.</p>
           </div>
           <div class="col-md-3"></div>
 
@@ -262,7 +262,7 @@
 
       
         </div><!--row end-->
-        <center> <button name="submit" class="formbtn" style=" border: 2px solid #d00409 !important;" onClick="sendContact();">Send</button><br><div class="message_info"></div></center>
+        <center> <button name="submit" class="formbtn" onClick="sendContact();">Send</button><br><div class="message_info"></div></center>
 
       </div>
     <!--end contact-form-->
@@ -399,7 +399,7 @@
                                     
                                 </div>
           <!-- <center> <a href="#" class="formbtn">Submit</a></center> -->
-          <center> <button name="submit" class="formbtn" style=" border: 2px solid #d00409 !important;" onClick="sendContact2();">Send</button><br><div class="message_info2"></div></center>
+          <center> <button name="submit" class="formbtn" onClick="sendContact2();">Send</button><br><div class="message_info2"></div></center>
           
           </div><!--div end-->
           
@@ -552,14 +552,17 @@ function sendContact() {
                   //alert("aaaaaaaaa");
                   if(data=='sent'){
                        $(".message_info").html("<span style='color:#2bb54a; font-weight:bold;'>Your Mail is Received!!!</span>");
-                       $("#f_name").val();
-                       $("#l_name").val();
-                       $("#phone").val();
-                       $("#email").val();
-                       $("#message").val();
+                       $("#f_name").val('');
+                       $("#l_name").val('');
+                       $("#phone").val('');
+                       $("#email").val('');
+                       $("#message").val('');
+                       $(".formbtn").html("Submitted");
+                       $(".formbtn").css("background-color",'#000');
+                       $(".formbtn").css("border",'1px solid #fff !important;');
                   }
                   else{
-                      $(".message_info").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");
+                    //  $(".message_info").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");
                   }
               }
       })  
@@ -623,14 +626,17 @@ function sendContact2() {
                   //alert("aaaaaaaaa");
                   if(data=='sent'){
                       $(".message_info2").html("<span style='color:#2bb54a; font-weight:bold;'>Your Mail is Received!!!</span>");
-                      $("#full_name2").val();
-                      $("#phone2").val();
-                      $("#email2").val();
-                      $("#skype2").val();
-                      $("#message2").val();
+                      $("#full_name2").val('');
+                      $("#phone2").val('');
+                      $("#email2").val('');
+                      $("#skype2").val('');
+                      $("#message2").val('');
+                      $(".formbtn").html("Submitted");
+                      $(".formbtn").css("background-color",'#000');
+                      $(".formbtn").css("border",'1px solid #fff !important;');
                   }
                   else{
-                      $(".message_info2").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");
+                     // $(".message_info2").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");
                   }
                   
               }
@@ -663,10 +669,7 @@ function validateContact2() {
         $("#phone2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
         valid = false;
     }
-    if(!$("#skype2").val()) {
-        $("#skype2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
-        valid = false;
-    }
+    
     if(!$("#message2").val()) {
         $("#message2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
         valid = false;

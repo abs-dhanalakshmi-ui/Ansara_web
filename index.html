@@ -137,13 +137,13 @@
     <div class="container-fluid">
       <div class="row">
       	<div class="col-lg-1"></div>
-        <div class="col-lg-5 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-5 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" >
         
           <h1>Digital Solutions </h1>
          <h2> to transform your business<span class="dot">.</span></h2>
           
           <div class="d-lg-flex">
-           <a href="#" class="btn-get-started scrollto">Let's Talk!</a>
+           <a href="contact.html" class="btn-get-started scrollto">Let's Talk!</a>
            
           </div>
         </div>
@@ -178,7 +178,10 @@
             <div class="icon-box">
               <div class="icon" align="center"><img src="assets/img/icons/sap.svg"/></div>
               <h4 align="center"><a href="">SAP Business Solutions</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, libero vitae iaculis ornare.</p>
+              <p>Our experts offer strategic business consulting so that you can leverage your SAP capabilities.
+                 We deliver end-to-end implementation, rollout, migration, upgrade, SAP quality review  and 
+                 flexible Application & Product support be it on/off-site.
+              </p>
               <p><a href="sap.html" class="view_btn">View More</a></p>
             </div>
           </div>
@@ -187,7 +190,8 @@
             <div class="icon-box-down">
               <div class="icon" align="center"><img src="assets/img/icons/mobile development.svg"/></div>
               <h4 align="center"><a href="">Mobile App Development</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, libero vitae iaculis ornare.</p>
+              <p>Our UI, Android and iOS developers work together seamlessly, utilizing new age technology trends to build robust and secure Mobile Apps with stunning UX. Bring your ideas to life, literally!
+              </p>
               <p><a href="web_dev.html" class="view_btn">View More</a></p>
             </div>
           </div>
@@ -196,7 +200,10 @@
             <div class="icon-box">
               <div class="icon" align="center"><img src="assets/img/icons/web development.svg"/></div>
               <h4 align="center"><a href="">Web Development</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, libero vitae iaculis ornare.</p>
+              <p>Front-end and back-end experts to create responsive Web applications, solutions & services
+                 with incredible UX and flawless UI. From concept to conception, we follow agile methodologies
+                  and shorter development times.
+              </p>
               <p><a href="web_dev.html" class="view_btn">View More</a></p>
             </div>
           </div>
@@ -205,7 +212,10 @@
             <div class="icon-box-down">
               <div class="icon" align="center"><img src="assets/img/icons/iot.svg"/></div>
               <h4 align="center"><a href="">IOT</a></h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tincidunt, libero vitae iaculis ornare.</p>
+              <p>Industry 4.0 is all about networking smart objects and automation for improved business outcomes. 
+                Our in-house IoT engineers will take your idea from Proof-of-Concept to Value in minimal development 
+                time, while leveraging cutting edge technology.
+              </p>
               <p><a href="iot.html" class="view_btn">View More</a></p>
             </div>
           </div>
@@ -271,7 +281,8 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="carousel-caption">
-                	<p><b>Project #1</b></p>
+                	<p><b>Point-of-Sale (POS) System</b></p>
+
                     <p>Ansara is committed to bringing your ideas to life.Brief us about
                     your requirements and we will get in touch with you! </p> 
                     
@@ -279,7 +290,8 @@
             </div>
             <div class="carousel-item">
                 <div class="carousel-caption">
-                	<p><b>Project #2</b></p>
+                	<p><b>Hybrid Ordering System (HOS)</b></p>
+                  
                    <p>Ansara is committed to bringing your ideas to life.Brief us about
                     your requirements and we will get in touch with you! </p>
                    
@@ -287,7 +299,7 @@
             </div>
             <div class="carousel-item">
                 <div class="carousel-caption">
-                	<p><b>Project #3</b></p>
+                	<p><b>Drive Thru - IoT for Smart Restaurants</b></p>
                    <p>Ansara is committed to bringing your ideas to life.Brief us about
                     your requirements and we will get in touch with you! </p>
                     
@@ -410,7 +422,7 @@
                           
                       </div>
 <!-- <center> <a href="#" class="formbtn">Submit</a></center> -->
-<center> <button name="submit" class="formbtn" style=" border: 2px solid #d00409 !important;" onClick="sendContact();">Send</button><br><div class="message_info"></div></center>
+<center> <button name="submit" class="formbtn" onClick="sendContact();">Send</button><br><div class="message_info"></div></center>
 
 </div><!--div end-->
 
@@ -567,15 +579,18 @@ function sendContact() {
               success: function(data){
                   //alert("aaaaaaaaa");
                   if(data=='sent'){
-                      $(".message_info").html("<span style='color:#2bb54a; font-weight:bold;'>Your Mail is Received!!!</span>");
-                      $("#full_name").val();
-                      $("#phone").val();
-                      $("#email").val();
-                      $("#sc_id").val();
-                      $("#message").val();
+                      $(".message_info").htfsendContactml("<span style='color:#2bb54a; font-weight:bold;'>Your Mail is Received!!!</span>");
+                      $("#full_name").val('');
+                      $("#phone").val('');
+                      $("#email").val('');
+                      $("#skype").val('');
+                      $("#message").val('');
+                      $(".formbtn").html("Submitted");
+                      $(".formbtn").css("background-color",'#000');
+                      $(".formbtn").css("border",'1px solid #fff !important;');
                   }
                   else{
-                      $(".message_info").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");
+                     // $(".message_info").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");   
                   }
                   
               }
@@ -606,10 +621,6 @@ function validateContact() {
     }
     if(!$("#phone").val()) {
         $("#phone").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
-        valid = false;
-    }
-    if(!$("#skype").val()) {
-        $("#skype").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
         valid = false;
     }
     if(!$("#message").val()) {

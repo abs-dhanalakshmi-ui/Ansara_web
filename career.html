@@ -140,7 +140,26 @@
           <li><a href="#">Blog</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           
-         
+          <!--<li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>-->
       </nav><!-- .nav-menu -->
 
        <a href="#myModal" class="get-started-btn scrollto" data-toggle="modal">Quick Enquiry</a>
@@ -258,7 +277,16 @@
                    </div> 
                 </div>
       
-                
+                <!-- <div class="col-xl-4 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="career-box">
+                        <h3>Product Marketing</h3>
+                        <div class="bord-btm"></div>
+                        <br>
+                        <p> <i class="fa fa-briefcase" aria-hidden="true"></i> 4 - 6 Years </p>
+                        <p> <i class="fa fa-map-marker" aria-hidden="true"></i> Banagalore</p>
+                        <a href="https://www.linkedin.com/jobs/view/2534021171/ " target="_blank" class="a_link">Apply <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div> -->
     
             
   
@@ -362,7 +390,7 @@
                                   <textarea class="form-control" rows="3" id="message2" name="message" style="height: 40px;margin-top:-20px;"></textarea>
                                   
                               </div>
-        <center> <button name="submit" class="formbtn" style=" border: 2px solid #d00409 !important;" onClick="sendContact2();">Send</button><br><div class="message_info2"></div></center>
+        <center> <button name="submit" class="formbtn" onClick="sendContact2();">Send</button><br><div class="message_info2"></div></center>
         
         </div><!--div end-->
       
@@ -407,7 +435,19 @@
 <!-- ======= Footer ======= -->
    <footer id="footer">
 
-   
+   <!--  <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
 
     <div class="footer-top" style="background-color: #fff !important;">
       <div class="container">
@@ -518,14 +558,17 @@
                   //alert("aaaaaaaaa");
                   if(data=='sent'){
                       $(".message_info2").html("<span style='color:#2bb54a; font-weight:bold;'>Your Mail is Received!!!</span>");
-                      $("#full_name2").val();
-                      $("#phone2").val();
-                      $("#email2").val();
-                      $("#skype2").val();
-                      $("#message2").val();
+                      $("#full_name2").val('');
+                      $("#phone2").val('');
+                      $("#email2").val('');
+                      $("#skype2").val('');
+                      $("#message2").val('');
+                      $(".formbtn").html("Submitted");
+                      $(".formbtn").css("background-color",'#000');
+                      $(".formbtn").css("border",'1px solid #fff !important;');
                   }
                   else{
-                      $(".message_info2").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");
+                      //$(".message_info2").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");
                   }
                   
               }
@@ -558,10 +601,7 @@ function validateContact2() {
         $("#phone2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
         valid = false;
     }
-    if(!$("#skype2").val()) {
-        $("#skype2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
-        valid = false;
-    }
+    
     if(!$("#message2").val()) {
         $("#message2").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
         valid = false;
