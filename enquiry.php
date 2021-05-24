@@ -186,6 +186,7 @@ if(!empty($_POST['send'])){
 
              </ul>
       </li>
+      <li><a href="solution.html">Solution</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           
