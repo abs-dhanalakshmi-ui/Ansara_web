@@ -54,7 +54,7 @@
     padding-left: 0px;
 }
 #demo {
-    background:#f3f3f3;
+    background:#efefef;
     
     max-width: 100%;
     margin: auto;
@@ -105,7 +105,7 @@
     padding-top:20px;
 }
 .s_heading{
-    color: #000 !important;
+    color: #172344 !important;
     font-size: 27px;
     font-family: 'Montserrat' !important;
     font-weight: 700 !important;
@@ -127,6 +127,9 @@
     position: relative;
     top:20px;
     bottom:20px;
+    /* box-shadow: -2px 1px 5px 5px #dadada; */
+    box-shadow: -2px 1px 5px 5px #00b9cc1f;
+    border-radius: 10%;
 }
 .mb{
     margin-bottom: 30px;
@@ -150,6 +153,86 @@
 }
 .form-control, .form-group .form-control {
     background-image: linear-gradient(#009688, #009688), linear-gradient(#1d1d1d, #c1c1c1);
+}
+.hos_logo{
+    width:100px;
+}
+.hos_tagline{
+    font-size: 18px;
+    font-weight: 500;
+    color: #212b49;
+    padding-left: 6px;
+    margin-bottom: 40px;
+    padding-top: 5px;
+}
+.carousel-caption img {
+    width: 450px;
+     border-radius: 0px !important; 
+     margin-top: -30px !important; 
+     float:right;
+     box-shadow: 0px -2px 7px 0px #abababe3;
+
+}
+#footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #20c2d4;
+}
+#footer .footer-top .footer-contact h3 {
+    font-size: 26px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #172344;
+    font-family: Montserrat !important;
+}
+#footer .footer-top .footer-contact p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: Montserrat !important;
+    color: #ffffff;
+}
+#footer .footer-top .footer-links ul a {
+    color: #fdfdfd;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 400;
+}
+.fp {
+    color: #fff;
+}
+#footer .footer-top .social-links a {
+    font-size: 40px;
+    display: inline-block;
+    background: #172344 !important;
+    color: #fff;
+    line-height: 1;
+    padding: 9px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+}
+#footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #1d253e;
+}
+#footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #172344;
+    font-size: 18px;
+    line-height: 1;
+}
+#footer {
+    font-size: 16px;
+    background: #172344;
 }
 
  </style>
@@ -209,30 +292,21 @@
 
              </ul>
       </li>
-      <li><a href="solution.html">Solution</a></li>
-          <!-- <li class="active"><a href="about.html">About</a></li> -->
-          <!-- <li><a href="#">Services</a></li> -->
+      <li class="drop-down"><a href="">Solution</a>
+        <ul>
+           <li>
+             <img src="assets/img/Droup_down_icons/h-logo.png" alt="logo"   class="rounded mx-auto d-block drop_img" style="width:55px;"/>
+             <a href="solution.html">HOS</a>
+           </li>
+          
+
+          </ul>
+   </li>
+     
           <li><a href="#">Blog</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           
-          <!-- <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Deep Drop Down</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li> -->
+         
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -249,14 +323,15 @@
       <div class="row">
       	<div class="col-lg-1"></div>
         <div class="col-lg-5 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" >
-        
+            <img src="assets/img/Hos-logo.png" class="hos_logo"/>
+            <h3 class="hos_tagline">HYBRID ORDERING SYSTEM</h3>
           <h2 class="hos_h2">Streamlining B2B <br>
             Commerce</h2>
         <p class="hos_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae metus sit amet justo aliquet dapibus.
              Vestibulum commodo aliquet dolor, dictum iaculis lacus tincidunt sit amet. </p>
           
           <div class="d-lg-flex">
-           <a href="contact.html" class="btn-get-started scrollto skyblue">Consult an Expert</a>
+           <a href="contact.html" class="btn-get-started scrollto skyblue">Request Demo</a>
            
           </div>
         </div>
@@ -273,15 +348,15 @@
 
   <main id="main">
 <div class="container">
-<h3 class="hos_h3">HOS+ is a Cutting edge B2B eCommerce portal that<br>
-    is build to fully integrate with SAP EAR.
+<h3 class="hos_h3">HOS is a Cutting edge B2B eCommerce portal that<br>
+    is built to fully integrate with SAP ERP.
     </h3>
 <div class="row">
 <div class="col-md-4 h_img">
 <center>
 <img src="assets/img/Hos/modular.svg" />
 <h3 class="hos_icon">Modular</h3>
-<p>End-to-end ecommerce,<br>
+<p>End-to-end ecommerce,
     delivered to you.
     </p>
 </center>
@@ -291,7 +366,7 @@
         <img src="assets/img/Hos/feature rich.svg" />
         <h3 class="hos_icon">Feature Rich</h3>
         <p>
-            Fully customisable to meet your<br>
+            Fully customisable to meet your
             business needs.
              
         </p>
@@ -310,15 +385,19 @@
     <div class="container-fluid">
 
      <div id="demo" class="carousel slide" data-ride="carousel">
-         <h3 class="s_heading">Data Management</h3>
+         
           <ol class="carousel-indicators">
       <li data-target="#demo" data-slide-to="0" class="active"></li>
       <li data-target="#demo" data-slide-to="1"></li>
       <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
      </ol>
       <div class="carousel-inner">
           <div class="carousel-item active">
+            <h3 class="s_heading">Data Management</h3>
               <div class="carousel-caption">
+                  <div class="row">
+                   <div class="col-md-6">
                   <h3 class="hos_slider">Personalized Product Catalog</h3>
 
                   <p>Customize your catalog for your customers needs,from rich content<br>
@@ -341,89 +420,146 @@
                         workflow functions Admin can authorize feature access as per user <br>
                         function
                     </p>
+                </div>
+                <div class="col-md-6">
+                  <img src="assets/img/slide_1.png" />
+                </div>
+                  </div>
+                   
                   
               </div>
           </div>
           <div class="carousel-item">
+            <h3 class="s_heading">Order Management</h3>
               <div class="carousel-caption">
-                <h3 class="hos_slider">Personalized Product Catalog</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                 <h3 class="hos_slider">Online Order Entry</h3>
 
-                <p>Customize your catalog for your customers needs,from rich content<br>
-                  to personalized product catalog,HOS+ has it all.</p> 
+                 <p>Easy to use interface for your customers to browse items and
+                  place online orders.</p> 
 
-                  <h3 class="hos_slider">Master Data</h3>
-                  <p>
-                      Master Data to Mange all your data lists under one umberella.<br>
-                      Manage your master data in one place.
-                  </p>
-                  <h3 class="hos_slider">Approval Hierarchy</h3>
-                  <p>
-                      Customizable to your business flow,add approval hierarchy to process<br>
-                      orders and planning.
-                      
-                  </p>
-                  <h3 class="hos_slider">Add User/ User List</h3>
-                  <p>
-                      Admin panel feature to add/edit/remove users according to their<br>
-                      workflow functions Admin can authorize feature access as per user <br>
-                      function
-                  </p>
+                   <h3 class="hos_slider">Order History</h3>
+                   <p>
+                    view all past orders for easy tracking and planning.
+                   </p>
+                   <h3 class="hos_slider">Order Status & Tracking</h3>
+                   <p>
+                    Check the status of orders from multiple-channels and real-time<br>
+                    tracking for improved efficiency of business processes.
+                       
+                   </p>
+                   <h3 class="hos_slider">Grid/Bulk Order</h3>
+                   <p>
+                    Set bulk order template for easy, one-time order placing of all <br>
+                    required stock items.
+                   </p>
+               </div>
+               <div class="col-md-6">
+                <img src="assets/img/slide_2.png" />
+               </div>
+                 </div>
                 
               </div>
           </div>
           <div class="carousel-item">
+            <h3 class="s_heading">Inventory Management</h3>
               <div class="carousel-caption">
-                <h3 class="hos_slider">Personalized Product Catalog</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                 <h3 class="hos_slider">Goods Receipt</h3>
 
-                <p>Customize your catalog for your customers needs,from rich content<br>
-                  to personalized product catalog,HOS+ has it all.</p> 
+                 <p>Identify and confirm incoming stocks using goods receive feature.<br>
+                  GR Dashboard to view all orders.</p> 
 
-                  <h3 class="hos_slider">Master Data</h3>
-                  <p>
-                      Master Data to Mange all your data lists under one umberella.<br>
-                      Manage your master data in one place.
-                  </p>
-                  <h3 class="hos_slider">Approval Hierarchy</h3>
-                  <p>
-                      Customizable to your business flow,add approval hierarchy to process<br>
-                      orders and planning.
-                      
-                  </p>
-                  <h3 class="hos_slider">Add User/ User List</h3>
-                  <p>
-                      Admin panel feature to add/edit/remove users according to their<br>
-                      workflow functions Admin can authorize feature access as per user <br>
-                      function
-                  </p>
+                   <h3 class="hos_slider">Goods Issue</h3>
+                   <p>
+                    Improved convenience for suppliers to keep track of goods issue in
+                    one place.
+                   </p>
+                   <h3 class="hos_slider">Stock Entry</h3>
+                   <p>
+                    Keep your entire business ecosystem up-to-date by updating of stock 
+                    items in real-time.
+                       
+                   </p>
+                   <h3 class="hos_slider">Replenishment Planning</h3>
+                   <p>
+                    Set planning parameters to monitor stock and plan reorders and 
+                    replenishments.
+                   </p>
+               </div>
+               <div class="col-md-6">
+                <img src="assets/img/slide_3.png" />
+               </div>
+                 </div>
                 
               </div>
           </div>
+          <div class="carousel-item">
+            <h3 class="s_heading">Complete Ecosystem</h3>
+              <div class="carousel-caption">
+                <div class="row">
+                  <div class="col-md-6">
+                 <h3 class="hos_slider">Built using SAP Business Rules</h3>
+
+                 <p>HOS is built using SAP Business Rules for use with 
+                  SAP ERP.Leverage your business capabilities with HOS
+                  Features.</p> 
+
+                   <h3 class="hos_slider">Designed for use with SAP S/4HANA</h3>
+                   <p>
+                    HOS is compatible with SAP S/4HANA platform.Explore 
+                    extended functionalities of your ERP.
+                   </p>
+                   <h3 class="hos_slider">Analytics & Reports</h3>
+                   <p>
+                    Data is Key to streamlining your business goals.with
+                    analytics & reports from HOS dashboard enhance your 
+                    opportunities.
+                       
+                   </p>
+                   <h3 class="hos_slider">Invoice & Payment</h3>
+                   <p>
+                    HOS can be integrated with a POS for a complete end-to-
+                    end business experience.
+                    
+                   </p>
+               </div>
+               <div class="col-md-6">
+                <img src="assets/img/slide_4.png" />
+               </div>
+                 </div>
+                
+              </div>
+          </div>
+          
       </div>
   
   </div>
    
   </div>
   <div class="container">
-    <h3 class="s_heading">Why Businesses Choose HOS</h3>
+    <h3 class="s_heading">Why Businesses Choose HOS ?</h3>
     <div class="row mb">
-    <div class="col-md-2"></div>
+    <div class="col-md-1"></div>
     <div class="col-md-2">
         <center>
             <img src="assets/img/Hos/simplified.svg"  class="b_img"/>
         </center>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-8">
     <h3 class="hos_b">Simplified B2B eCommerce</h3>
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     </p>
     </div>
-    <div class="col-md-2"></div>
+    <div class="col-md-1"></div>
     </div>
     <div class="row mb">
-        <div class="col-md-2"></div>
+        <div class="col-md-1"></div>
        
-        <div class="col-md-6">
+        <div class="col-md-8">
         <h3 class="hos_b">Cut Operational Costs <br>
             Increase growth Opportunities</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -435,30 +571,30 @@
                 <img src="assets/img/Hos/growth.svg"  class="b_img"/>
             </center>
         </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-1"></div>
         </div>
         <div class="row mb">
-            <div class="col-md-2"></div>
+            <div class="col-md-1"></div>
             <div class="col-md-2">
                 <center>
                     <img src="assets/img/Hos/customize.svg"  class="b_img"/>
                 </center>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-8">
             <h3 class="hos_b">Built for the future<br>
                 Customizable to your needs</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             </p>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-1"></div>
             </div>
    
     </div>
    
 <div class="container">
     <h3 class="s_heading">Want to know how you can grow <br>
-        your business with HOS?</h3>
+        your business with HOS ?</h3>
 <center><p>Lorem Ipsum is simply dummy text of the printing and typesetting  <br>
      Lorem Ipsum has been the industry's standard dummy text</p></center>
 <div class="fbg">
@@ -523,7 +659,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-   <!-- <footer id="footer">
+   <footer id="footer">
 
    
 
@@ -590,7 +726,7 @@
          Designed by <a href="https://ansara.co/">Ansara</a>
       </div>
     </div>
-  </footer>   -->
+  </footer>  
 <!-- End Footer -->
   
 
