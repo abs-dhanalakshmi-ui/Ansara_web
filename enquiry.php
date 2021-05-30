@@ -190,7 +190,7 @@ if(!empty($_POST['send'])){
         <ul>
            <li>
              <img src="assets/img/Droup_down_icons/h-logo.png" alt="logo" class="rounded mx-auto d-block drop_img" style="width: 70px;"/>
-             <a href="solution.html">Hybrid  Ordering  system</a></li>
+             <a href="hos.html">Hybrid  Ordering  system</a></li>
 
           </ul>
    </li>

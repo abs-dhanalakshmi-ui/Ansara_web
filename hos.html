@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ansara - SaaS Business Solutions | Business Consulting | Web App Development</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+  <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+ <!-- font--->
+
+
+<!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ <style type="text/css">
+ .phone {
+    color: #000 !important;
+    background: url(assets/img/down-chevron.svg) no-repeat right #252525!important;
+    border-bottom: 1px solid #fff!important;
+    border-bottom: 1px solid #939292 !important;
+    background-color: #f3f3f3 !important;
+}
+
+.phone_line {
+    width: 75% !important;
+    position: relative;
+    left: 95px;
+    top: -45px;
+}
+.phone {
+    width: 15% !important;
+    color: #000;
+    font-weight: 400;
+    padding-left: 0px;
+}
+#demo {
+    background:#efefef;
+    
+    max-width: 100%;
+    margin: auto;
+    border-radius: 0px !important;
+    float: left;
+    width:100%;
+    /* margin-bottom: 35px; */
+    
+
+}
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #080808;
+    background-clip: padding-box;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 50%;
+}
+.hos_icon{
+    color: #000 !important;
+    font-size: 20px;
+    font-family: 'Montserrat' !important;
+    font-weight: 600 !important;
+    text-align: center;
+    padding-top: 20px;
+}
+.hos_slider{
+    color: #000 !important;
+    font-size: 16px;
+    font-family: 'Montserrat' !important;
+    font-weight: 700 !important;
+   
+}
+.hos_b{
+    color: #000 !important;
+    font-size: 20px;
+    font-family: 'Montserrat' !important;
+    font-weight: 600 !important;
+    padding-top:20px;
+}
+.s_heading{
+    color: #172344 !important;
+    font-size: 27px;
+    font-family: 'Montserrat' !important;
+    font-weight: 700 !important;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.carousel-caption {
+    position: initial;
+    z-index: 10;
+    padding: 60px;
+    color: #000;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 50px;
+}
+.b_img{
+    width:95px;
+    position: relative;
+    top:20px;
+    bottom:20px;
+    /* box-shadow: -2px 1px 5px 5px #dadada; */
+    /* box-shadow: -2px 1px 5px 5px #00b9cc1f; */
+    border-radius: 10%;
+}
+.mb{
+    margin-bottom: 55px;
+}
+.fbg {
+    background-color: #f3f3f3;
+    padding: 85px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.skyblue{
+  background-color:#00b9cc !important;
+  color:#fff !important;
+  border: 2px solid #00b9cc !important;
+}
+.form-group .checkbox label, .form-group .radio label, .form-group label {
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #3c3636;
+    font-weight: 400;
+}
+.form-control, .form-group .form-control {
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#1d1d1d, #c1c1c1);
+}
+.hos_logo{
+    width:230px;
+    padding-left: 90px;
+}
+.hos_tagline{
+    font-size: 18px;
+    font-weight: 500;
+    color: #212b49;
+    padding-left: 50px;
+    margin-bottom: 40px;
+    padding-top: 5px;
+}
+.carousel-caption img {
+    width: 600px;
+    
+     border-radius: 0px !important; 
+     margin-top: 0px !important; 
+     
+     /* box-shadow: 0px -2px 7px 0px #abababe3; */
+
+}
+#footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #20c2d4;
+}
+#footer .footer-top .footer-contact h3 {
+    font-size: 26px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #172344;
+    font-family: Montserrat !important;
+}
+#footer .footer-top .footer-contact p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: Montserrat !important;
+    color: #ffffff;
+}
+#footer .footer-top .footer-links ul a {
+    color: #fdfdfd;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 400;
+}
+.fp {
+    color: #fff;
+}
+#footer .footer-top .social-links a {
+    font-size: 40px;
+    display: inline-block;
+    background: #172344 !important;
+    color: #fff;
+    line-height: 1;
+    padding: 9px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+}
+#footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #1d253e;
+}
+#footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #172344;
+    font-size: 18px;
+    line-height: 1;
+}
+#footer {
+    font-size: 16px;
+    background: #172344;
+}
+
+
+ </style>
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top top_header">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html">
+      	<img src="assets/img/logo.png" alt="logo"/>
+      </a></h1>
+      
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+        	 <li class="drop-down"><a href="">Company</a>
+        	 <ul>
+              <li class="border_line">
+              	<img src="assets/img/Droup_down_icons/about.png" alt="logo" class="rounded mx-auto d-block drop_img"/>
+              	<a href="about.html">About</a></li>
+
+
+
+                <li>
+                <img src="assets/img/Droup_down_icons/careers.png" alt="logo"  class=" rounded mx-auto d-block drop_img" />
+                <a href="career.html">Careers</a></li>
+             
+              <!-- <li>
+              	<img src="assets/img/Droup_down_icons/partner.png" alt="logo"  class="rounded mx-auto d-block drop_img" style="width:45px;"/>
+              	<a href="#">Partners</a>
+              </li> -->
+
+             </ul>
+      </li>
+      <li class="drop-down"><a href="">Services</a>
+           <ul>
+              <li class="border_line">
+                <img src="assets/img/Droup_down_icons/sap.png" alt="logo"   class="rounded mx-auto d-block drop_img"/>
+                <a href="sap.html">SAP</a>
+              </li>
+              <li class="border_line">
+               <img src="assets/img/Droup_down_icons/iot2.png" alt="logo"  class="rounded mx-auto d-block drop_img"/>
+                <a href="iot.html">IoT</a>
+              </li>
+              <li class="border_line">
+               <img src="assets/img/Droup_down_icons/webdev.png" alt="logo"  class="rounded mx-auto d-block drop_img"/>
+                <a href="web_dev.html">Web <br> Development</a>
+              </li>
+              <li>
+                <img src="assets/img/Droup_down_icons/mobiledev.png" alt="logo" class="rounded mx-auto d-block drop_img"/>
+                <a href="web_dev.html">Mobile <br> Development</a>
+              </li>
+
+             </ul>
+      </li>
+      <li class="drop-down"><a href="">Solutions</a>
+        <ul>
+           <li>
+             <img src="assets/img/Droup_down_icons/h-logo.png" alt="logo" class="rounded mx-auto d-block drop_img" style="width: 70px;"/>
+             <a href="hos.html">Hybrid  Ordering  system</a></li>
+
+          </ul>
+   </li>
+      
+     
+          <li><a href="#">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          
+         
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="#enquiry" class="get-started-btn scrollto skyblue">Quick Enquiry</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center" style="background-color: #fff;">
+
+    <div class="container-fluid">
+      <div class="row">
+      	<!-- <div class="col-lg-1"></div> -->
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" >
+            <img src="assets/img/Hos-logo.png" class="hos_logo"/>
+            <h3 class="hos_tagline">HYBRID ORDERING SYSTEM</h3>
+          <h2 class="hos_h2">Streamlining B2B <br>
+            Commerce</h2>
+        <p class="hos_p">HOS platform provides a seamless digital B2B portal interconnecting consumers and suppliers. Drive growth & productivity to your business while HOS handles your complex business ecosystems.
+        </p>
+          
+          <div class="d-lg-flex">
+           <a href="contact.html" class="btn-get-started scrollto skyblue pl">Request Demo</a>
+           
+          </div>
+        </div>
+        <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/circles.png" class="img-fluid animated" alt="">
+        </div> -->
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/laptop.png" class="img-fluid" alt="" style="margin-top: 100px;">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+<div class="container-fluid" style="background: #f0fcfd8f;">
+<h3 class="hos_h3">HOS is a Cutting edge B2B eCommerce portal that<br>
+    is built to fully integrate with SAP ERP.
+    </h3>
+<div class="row" style="margin-left: 0px;margin-right: 0px;">
+<div class="col-md-4 h_img">
+<center>
+<img src="assets/img/Hos/modular.svg" />
+<h3 class="hos_icon">Modular</h3>
+<p>End-to-end ecommerce,
+    delivered to you.
+    </p>
+</center>
+</div>
+<div class="col-md-4 h_img">
+    <center>
+        <img src="assets/img/Hos/feature rich.svg" />
+        <h3 class="hos_icon">Feature Rich</h3>
+        <p>
+            Fully customisable to meet your
+            business needs.
+             
+        </p>
+    </center>
+</div>
+<div class="col-md-4 h_img">
+    <center>
+        <img src="assets/img/Hos/erp.svg" />
+        <h3 class="hos_icon">ERP Integration</h3>
+        <p>Seemless integration with your ERP</p>
+    </center>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+      
+       <ol class="carousel-indicators">
+   <li data-target="#demo" data-slide-to="0" class="active"></li>
+   <li data-target="#demo" data-slide-to="1"></li>
+   <li data-target="#demo" data-slide-to="2"></li>
+   <li data-target="#demo" data-slide-to="3"></li>
+  </ol>
+   <div class="carousel-inner">
+       <div class="carousel-item active">
+         <h3 class="s_heading">Data Management</h3>
+           <div class="carousel-caption">
+               <div class="row">
+                <div class="col-md-6">
+               <h3 class="hos_slider">Personalized Product Catalog</h3>
+
+               <p>Customize your catalog for your customers needs,from rich content<br>
+                 to personalized product catalog,HOS+ has it all.</p> 
+
+                 <h3 class="hos_slider">Master Data</h3>
+                 <p>
+                     Master Data to Mange all your data lists under one umberella.<br>
+                     Manage your master data in one place.
+                 </p>
+                 <h3 class="hos_slider">Approval Hierarchy</h3>
+                 <p>
+                     Customizable to your business flow,add approval hierarchy to process<br>
+                     orders and planning.
+                     
+                 </p>
+                 <h3 class="hos_slider">Add User/ User List</h3>
+                 <p>
+                     Admin panel feature to add/edit/remove users according to their<br>
+                     workflow functions Admin can authorize feature access as per user <br>
+                     function
+                 </p>
+             </div>
+             <div class="col-md-6">
+               <img src="assets/img/s1.jpg" />
+             </div>
+               </div>
+                
+               
+           </div>
+       </div>
+       <div class="carousel-item">
+         <h3 class="s_heading">Order Management</h3>
+           <div class="carousel-caption">
+             <div class="row">
+               <div class="col-md-6">
+              <h3 class="hos_slider">Online Order Entry</h3>
+
+              <p>Easy to use interface for your customers to browse items and
+               place online orders.</p> 
+
+                <h3 class="hos_slider">Order History</h3>
+                <p>
+                 view all past orders for easy tracking and planning.
+                </p>
+                <h3 class="hos_slider">Order Status & Tracking</h3>
+                <p>
+                 Check the status of orders from multiple-channels and real-time<br>
+                 tracking for improved efficiency of business processes.
+                    
+                </p>
+                <h3 class="hos_slider">Grid/Bulk Order</h3>
+                <p>
+                 Set bulk order template for easy, one-time order placing of all <br>
+                 required stock items.
+                </p>
+                <br>
+                <br>
+            </div>
+            <div class="col-md-6">
+             <img src="assets/img/s2.jpg" />
+            </div>
+              </div>
+             
+           </div>
+       </div>
+       <div class="carousel-item">
+         <h3 class="s_heading">Inventory Management</h3>
+           <div class="carousel-caption">
+             <div class="row">
+               <div class="col-md-6">
+              <h3 class="hos_slider">Goods Receipt</h3>
+
+              <p>Identify and confirm incoming stocks using goods receive feature.<br>
+               GR Dashboard to view all orders.</p> 
+
+                <h3 class="hos_slider">Goods Issue</h3>
+                <p>
+                 Improved convenience for suppliers to keep track of goods issue in
+                 one place.
+                </p>
+                <h3 class="hos_slider">Stock Entry</h3>
+                <p>
+                 Keep your entire business ecosystem up-to-date by updating of stock 
+                 items in real-time.
+                    
+                </p>
+                <h3 class="hos_slider">Replenishment Planning</h3>
+                <p>
+                 Set planning parameters to monitor stock and plan reorders and 
+                 replenishments.
+                </p>
+                <br>
+            </div>
+            <div class="col-md-6">
+             <img src="assets/img/s3.jpg" />
+            </div>
+              </div>
+             
+           </div>
+       </div>
+       <div class="carousel-item">
+         <h3 class="s_heading">Complete Ecosystem</h3>
+           <div class="carousel-caption">
+             <div class="row">
+               <div class="col-md-6">
+              <h3 class="hos_slider">Built using SAP Business Rules</h3>
+
+              <p>HOS is built using SAP Business Rules for use with 
+               SAP ERP.Leverage your business capabilities with HOS
+               Features.</p> 
+
+                <h3 class="hos_slider">Designed for use with SAP S/4HANA</h3>
+                <p>
+                 HOS is compatible with SAP S/4HANA platform.Explore 
+                 extended functionalities of your ERP.
+                </p>
+                <h3 class="hos_slider">Analytics & Reports</h3>
+                <p>
+                 Data is Key to streamlining your business goals.with
+                 analytics & reports from HOS dashboard enhance your 
+                 opportunities.
+                    
+                </p>
+                <h3 class="hos_slider">Invoice & Payment</h3>
+                <p>
+                 HOS can be integrated with a POS for a complete end-to-
+                 end business experience.
+                 
+                </p>
+            </div>
+            <div class="col-md-6">
+             <img src="assets/img/s4.jpg" />
+            </div>
+              </div>
+             
+           </div>
+       </div>
+       
+   </div>
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid" style="background: #f0fcfd8f;">
+  <h3 class="s_heading">Why Businesses Choose HOS ?</h3>
+  <div class="row mb" style="margin-left: 0px;margin-right: 0px;">
+  <div class="col-md-2"></div>
+  <div class="col-md-2">
+      <center>
+          <img src="assets/img/Hos/simplified.svg"  class="b_img"/>
+      </center>
+  </div>
+  <div class="col-md-6">
+  <h3 class="hos_b">Simplified B2B eCommerce</h3>
+  <p>Enhance your ERP capabilities with HOS. Designed for seamless integration with SAP S/4HANA®
+  </p>
+  </div>
+  <div class="col-md-2"></div>
+  </div>
+  <div class="row mb">
+      <div class="col-md-2"></div>
+     
+      <div class="col-md-6" style="margin-left: 60px;">
+      <h3 class="hos_b">
+          Increase Growth Opportunities</h3>
+      <p>HOS, with its fully customizable platform is designed to meet your unique business needs. Reduce operational costs and maximize ROI
+
+      </p>
+      </div>
+      <div class="col-md-2">
+          <center>
+              <img src="assets/img/Hos/growth.svg"  class="b_img" style="float:left;/>
+          </center>
+      </div>
+      <div class="col-md-2"></div>
+      </div>
+      <div class="row mb">
+          <div class="col-md-2"></div>
+          <div class="col-md-2">
+              <center>
+                  <img src="assets/img/Hos/customize.svg"  class="b_img"/>
+              </center>
+          </div>
+          <div class="col-md-6">
+          <h3 class="hos_b">Built for the Future</h3>
+          <p>As more and more businesses undergo digital transformation, keep your business up to date with HOS, built for the businesses of the future
+ 
+          </p>
+          </div>
+          <div class="col-md-2"></div>
+          </div>
+ <br>
+ <br>
+  </div>
+
+  
+   
+<div class="container">
+    <h3 class="s_heading">Want to know how you can grow <br>
+        your business with HOS ?</h3>
+<center> <p class="abt">Fill the Form and our representative will connect with you.
+</p></center>
+<div class="fbg">
+    
+        <div class="row">
+   
+            <div class="col-md-6">
+              <div class="form-group label-floating">
+                           <label class="control-label" for="name">Full Name</label>
+                           <input class="form-control" id="f_name" type="text" name="f_name" >
+                           
+                         </div>
+                         <div class="form-group label-floating">
+                           <label class="control-label" for="email">Email</label>
+                           <input class="form-control" id="email" type="text" name="l_name">
+                          
+                         </div>
+                         <div class="form-group label-floating">
+                            <label for="message" class="control-label">Company</label>
+                            <input class="form-control" id="company" type="text" name="l_name">
+                            
+                        </div>
+             </div>
+          <div class="col-md-6">
+   
+                     <div class="form-group label-floating">
+                           <label class="control-label" for="name"> Last Name</label>
+                           <input class="form-control" id="l_name" name="email">
+                           
+                         </div>
+   
+                          <div class="form-group label-floating">
+                           <label class="control-label" for="email">Phone</label>
+                           
+                           <select class="form-control phone" id="country" name="country">
+                            
+                             <option> +91 </option>
+                             <option>+966</option>
+                             <option>+1</option>
+                             
+                           </select> 
+   
+   
+                           <input class="form-control phone_line" id="phone" name="phone">
+                          
+                         </div>
+            </div>
+             
+         
+                      
+         
+           </div><!--row end-->
+          
+   
+           <center> <button name="submit" class="formbtn skyblue">Submit</button> </center> 
+
+       <!--end contact-form-->
+    </div>
+     
+</div>
+
+
+
+   
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+   <footer id="footer">
+
+   
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h3>Ansara </h3>
+            <p>
+              Ansara Business Solutions Pvt . Ltd .<br>
+              1 Saroj Square, 4th Floor, <br>
+              Silver Spring Layout Road, <br>
+              Kundanahalli Main Road,<br>
+              Bengaluru , Karnataka 560037<br><br>
+              <strong>Phone:</strong> +91 97518 27604<br>
+              <strong>Email:</strong> info@ansara.co<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="career.html">Careers</a></li>
+             
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="sap.html">SAP</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="iot.html">IOT</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="web_dev.html">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="web_dev.html">Mobile development</a></li>
+              
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p class="fp">Find us on Social Media here</p>
+            <center><div class="social-links mt-3">
+            
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+             
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div></center>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Ansara</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      
+         Designed by <a href="https://ansara.co/">Ansara</a>
+      </div>
+    </div>
+  </footer>  
+<!-- End Footer -->
+  
+
+  <!-- <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a> -->
+  
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+ <script src="assets/vendor/aos/aos.js"></script>
+<!--carousel-code-->
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.customer-logos').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        }, {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+});
+
+function sendContact() {
+    var valid;  
+    valid = validateContact();
+    if(valid) {
+      var full_name=$("#full_name").val();
+      var email=$("#email").val();
+      var country=$("#country").val();
+      var phone=$("#phone").val();
+      var sc_id=$("#skype").val();
+      var message=$("#message").val();
+      $.ajax({
+              type: 'POST',
+              url: 'mail.php',
+              data: {full_name:full_name,email:email,country:country,phone:phone,sc_id:sc_id,message:message,type:"enquiry"},
+              success: function(data){
+                  //alert("aaaaaaaaa");
+                  if(data=='sent'){
+                      $(".message_info").htfsendContactml("<span style='color:#2bb54a; font-weight:bold;'>Your Mail is Received!!!</span>");
+                      $("#full_name").val('');
+                      $("#phone").val('');
+                      $("#email").val('');
+                      $("#skype").val('');
+                      $("#message").val('');
+                      $(".formbtn").html("Submitted");
+                      $(".formbtn").css("background-color",'#000');
+                      $(".formbtn").css("border",'1px solid #fff !important;');
+                  }
+                  else{
+                     // $(".message_info").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");   
+                  }
+                  
+              }
+      })  
+    }      
+}
+
+
+function validateContact() {
+    var valid = true; 
+
+    if(!$("#full_name").val()) {
+        $("#full_name").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }   
+    if(!$("#email").val()){
+        $("#email").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }
+    if(!$("#email").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+        $("#email").focus();
+        $("#email").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }
+    if(!$("#country").val()) {
+        $("#country").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }
+    if(!$("#phone").val()) {
+        $("#phone").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }
+    if(!$("#message").val()) {
+        $("#message").css('background-image','linear-gradient(#009688, #fd1313), linear-gradient(#D2D2D2, #fd1313)');
+        valid = false;
+    }
+    return valid;
+}  
+  </script>
+
+</body>
+
+</html>
