@@ -81,6 +81,10 @@
     padding: 0px !important;
     padding-bottom: 20px !important;
 }
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 
 /*Model-popup*/
  </style>
@@ -428,7 +432,7 @@
                                   <textarea class="form-control" rows="3" id="message2" name="message" style="height: 40px;margin-top:-20px;"></textarea>
                                   
                               </div>
-        <center> <button name="submit" class="formbtn" style=" border: 2px solid #d00409 !important;" onClick="sendContact2();">Send</button><br><div class="message_info2"></div></center>
+        <center> <button name="submit" class="formbtn" onClick="sendContact2();">Send</button></center>
         
         </div><!--div end-->
           
@@ -606,12 +610,15 @@ function sendContact2() {
               success: function(data){
                   //alert("aaaaaaaaa");
                   if(data=='sent'){
-                      $(".message_info2").html("<span style='color:#2bb54a; font-weight:bold;'>Your Mail is Received!!!</span>");
+                      //$(".message_info2").html("<span style='color:#2bb54a; font-weight:bold;'>Your Mail is Received!!!</span>");
                       $("#full_name2").val();
                       $("#phone2").val();
                       $("#email2").val();
                       $("#skype2").val();
                       $("#message2").val();
+                      $(".formbtn").html("Submitted");
+                      $(".formbtn").css("background-color",'#000');
+                      $(".formbtn").css("border",'1px solid #fff;');
                   }
                   else{
                       $(".message_info2").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");

@@ -41,6 +41,10 @@
   background: url(assets/img/down-chevron.svg) no-repeat right #252525!important;
   border-bottom: 1px solid #fff!important;
 }
+.container-fluid {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
 
  </style>
  
@@ -184,7 +188,7 @@
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon" align="center"><img src="assets/img/icons/sap.svg"/></div>
-              <h4 align="center"><a href="">SAP Business Solutions</a></h4>
+              <h4 align="center"><a href="">SAP Consulting Services</a></h4>
               <p>Our experts offer strategic business consulting so that you can leverage your SAP capabilities.
                  We deliver end-to-end implementation, rollout, migration, upgrade, SAP quality review  and 
                  flexible Application & Product support be it on/off-site.
@@ -429,7 +433,7 @@
                           
                       </div>
 <!-- <center> <a href="#" class="formbtn">Submit</a></center> -->
-<center> <button name="submit" class="formbtn" onClick="sendContact();">Send</button><br><div class="message_info"></div></center>
+<center> <button name="submit" class="formbtn" onClick="sendContact();">Send</button></center>
 
 </div><!--div end-->
 
@@ -582,19 +586,23 @@ function sendContact() {
               data: {full_name:full_name,email:email,country:country,phone:phone,sc_id:sc_id,message:message,type:"enquiry"},
               success: function(data){
                   //alert("aaaaaaaaa");
+                  //alert(data);
+                  //var dataResult=$.trim(data);
+                  //alert(dataResult);
                   if(data=='sent'){
-                      $(".message_info").htfsendContactml("<span style='color:#2bb54a; font-weight:bold;'>Your Mail is Received!!!</span>");
+                      //$(".message_info").htfsendContactml("<span style='color:#2bb54a; font-weight:bold;'>Your Mail is Received!!!</span>");
                       $("#full_name").val('');
                       $("#phone").val('');
                       $("#email").val('');
                       $("#skype").val('');
                       $("#message").val('');
-                      $(".formbtn").html("Submitted");
-                      $(".formbtn").css("background-color",'#000');
-                      $(".formbtn").css("border",'1px solid #fff !important;');
+                      $(".formbtn").html("Received");
+                      $(".formbtn").css("background-color", "#000");
+                      $(".formbtn").css("border",'1px solid #fff;');
                   }
                   else{
-                     // $(".message_info").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");   
+                     // $(".message_info").html("<span style='color:#ff0000; font-weight:bold;'>Not Sent !!!</span>");  
+                    
                   }
                   
               }
